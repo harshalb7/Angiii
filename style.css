@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /*min-height: 100vh;*/
+    background: #fff;
+    /*background-size:cover;
+    background-position:center;*/
+}
+
+
+/*SIDEBAR*/
+.wrapper .sidebar{
+    background: #45595A;/*#678983*/
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    /*'backdrop-filter' is not supported by Firefox, Firefox for Android, Safari, Safari on iOS. 
+    Add '-webkit-backdrop-filter' to support Safari 9+, Safari on iOS 9+.*/
+    width: 290px;
+    height:100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.wrapper .sidebar .menu{
+    width:100%;
+    margin-top: 275px; /*margin-top for logo*//*300px*/
+}
+
+.wrapper .sidebar .dashimg{
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: fixed;
+
+    /*hline below the logo*/
+    border-bottom: 15px solid transparent;
+    /*border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0));*/
+    border-image: linear-gradient(0.30turn, rgba(255,255,255), rgba(69,89,90));
+    border-image-slice: 1%;/*30%*/
+    border-width: 274;
+    left: -10;
+	/*width: 274px;*/
+} 
+
+.wrapper .sidebar .dashimg .logo{
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.wrapper .sidebar .menu .item{
+    position: relative;
+    cursor: pointer;
+}
+
+.wrapper .sidebar .menu .item a{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 50px; /*60px*/
+}
+
+.wrapper .sidebar .menu .item a:hover{
+    background: #9b9c61;/*#434244*/
+    /*transition: 0.3s ease;
+    margin-left: 15px;*/
+}
+
+.wrapper .sidebar .menu .item i{
+    margin-right: 15px;
+    
+}
+.wrapper .sidebar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.wrapper .sidebar .menu .item .sub-menu{
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.wrapper .sidebar .menu .item .sub-menu a{
+    padding-left: 10 70px; /*80px*/
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+
+
+
+/*MAIN CONTAINER*/
+.wrapper .main-container{
+    width: (100% - 290px);
+    margin-top: 0;
+    margin-left: 290px;
+    padding: 15px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.wrapper .main-container .card{
+    background: #8fc4b8;
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.wrapper .main-container .text-center h2{
+    margin-top: 10px;
+}
+
+.wrapper .main-container .container-fluid .row .container .row .addbutton{
+    margin-top: 10px; 
+    margin-bottom: 30px;
+}
+
+.amodal span.required{
+    color: #b33127;
+}
+
+.emodal span.required{
+    color: #b33127;
+}
+
+
+/*7:30*/
+/*width="250" height="250" style="position: fixed; left: 20px; right: 0px; bottom: 10px;top: 30px"*/
